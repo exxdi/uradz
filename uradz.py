@@ -4,7 +4,7 @@ class Human:
 class Male(Human):
     def __init__(self, name, age):
         self.name = name
-        self.gender = "Чоловік"
+        self.gender = "Male"
         self.age = age
     def speak(self):
         return f"Hi! My name is {self.name}!"
@@ -15,8 +15,8 @@ class Female(Human):
         self.age = age
     def speak(self):
         return f"Hey! I'm {self.name}!"
-male = Male("Іван", 30)
-female = Female("Марія", 25)
+male = Male("Ivan", 30)
+female = Female("Maria", 25)
 print(male.name)
 print(female.name)
 print(male.speak())
